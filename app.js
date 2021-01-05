@@ -60,6 +60,67 @@ if (answer5.toLowerCase() === "y" || answer5.toLowerCase() === "yes") {
 //console.log(answer5.toLowerCase())
 
 
+//var answer6 = '3';
+//var answer6 = prompt("what is my favnumber ? ");
+//if (answer6 === "2" || answer6 === "4") {
+//  alert('great you are too low');
+// sum++;
+//} else if (answer6 === "1" || answer6 === "5") {
+//  alert(' im sorry you are too high');
+//}
+//console.log(answer6)
+
+//var answer6 = prompt('what is my favnumber?')
+//switch(answer6){
+//case'3':
+// alert(' yes thats right ');
+// break;
+// case'5':
+// case'6':
+// alert('you are too high')
+// break;
+// case'4':
+// case'2':
+// alert('you are too low')
+// break;
+// default:
+//   alert('invalid answer');
+//}
+//console.log(answer6)
+var answer6 = '3'
+//var opp = ['1', '2', '3', '4']
+for (var i = 0; i < 4; i++) {
+    var answer6 = prompt('what is my favnumber? ');
+    if (answer6 == '3') {
+        alert('thats right')
+        sum++
+        break;
+    } else if (answer6 < 3) {
+        alert('thats too low')
+
+    }
+    else if (answer6 > 3) {
+        alert('thats too high')
+
+
+    }
+}
+alert(' the right answer is 3 ');
+
+
+
+var favcolor = ['blue', 'red', 'yellow', 'white'];
+var answer7 = prompt('what is my favcolor?')
+for (var index = 0; index = favcolor.length; index++) {
+    if (favcolor[index]===answer7)
+    sum++
+} else if (favcolor[index]!==answer7){
+}
+    }
+        console.log(answe[index]);
+}
+
+
 
 
 alert('thanks for your time dear  ' + username + ' nice to meet you ');
