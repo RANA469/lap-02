@@ -96,32 +96,31 @@ for (var i = 0; i < 4; i++) {
         sum++
         break;
     } else if (answer6 < 3) {
-        alert('thats too low')
+        alert('thats too low');
 
     }
     else if (answer6 > 3) {
-        alert('thats too high')
-
-
+        alert('thats too high');
     }
 }
 alert(' the right answer is 3 ');
-
-
-
+var g = 0
 var favcolor = ['blue', 'red', 'yellow', 'white'];
-var answer7 = prompt('what is my favcolor?')
-for (var index = 0; index = favcolor.length; index++) {
-    if (favcolor[index]===answer7)
-    sum++
-} else if (favcolor[index]!==answer7){
-}
+var correctAnswer = false;
+var answer7 = prompt('what is my favcolor?');
+while (g <= 5 && !correctAnswer) {
+    var answer7 = prompt('what is my favcolor?');
+    for (var i = 0; i < favcolor.length; i++) {
+        if (favcolor[i] === answer7.toLowerCase) {
+            alert('correct answer!');
+            correctAnswer = true;
+            sum++;
+            break;
+        }
     }
-        console.log(answe[index]);
+    g++;
 }
-
-
-
-
-alert('thanks for your time dear  ' + username + ' nice to meet you ');
+alert('thanks for your time dear  ' + username + ' nice to meet you ' + 'your score is : ' + sum);
 document.write("have a nice day " + username);
+
+
